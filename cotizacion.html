@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>TAF Consultores</title>
+        <meta  name="description" content="Somos consultores especialistas en soluciones y damos formación para aplicar las normativas vigentes">
+        <meta  name="keywords" content="consultoria proteccion de datos, consultoria de datos, consultores, proteccion de datos,ley de proteccion de datos">
+      
+        <!-- Favicons -->
+        <link href="assets/img/logotafvertical.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <!--Cookie Consent------------>
+        <link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
+        <script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
+        <script>
+          PDCookieConsent.config({
+                "brand": {
+                    "dev" : true,
+                    "name": "TAF Consultores ",
+                    "url" : "https://tafconsultores.com",
+                    "websiteOwner" : ""
+                   },
+                  "cookiePolicyLink": "politica-privacidad.html",
+                  "hideModalIn": [""],
+              "styles": { 
+                  "primaryButton": { 
+                      "bgColor" : "#F7C03E", 
+                      "txtColor": "#036900"},
+              "secondaryButton": { 
+                  "bgColor" : "#EEEEEE",
+                  "txtColor": "#333333"}
+              }})
+              
+        </script>
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      
+        <!-- Template Main CSS File -->
+        <link href="assets/css/style.css" rel="stylesheet">
+      
+        <!-- =======================================================
+        * Template Name: Flexor - v2.0.0
+        * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+      </head>
+<header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+      <a href="index.html"><img src="assets/img/logotafcompleto.png" alt="tafconsultores" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="#about">¿Quiénes Somos?</a></li>
+          <li class="drop-down"><a href="">La Empresa</a>
+            <ul>
+                  <li><a href="mision.html">Mision</a></li>
+                  <li><a href="vision.html">Vision</a></li>
+                  <li><a href="valores.html">Valores</a></li>
+                  
+            </ul>
+          </li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="cotizacion.html">Cotizacion</a></li>
+          <li><a href="#contact">Contacto</a></li>
+      <!--<li class="drop-down"><a href="">Idioma</a>
+            <ul>
+                  <li><a href="index.html">Español</a></li>
+                  <li><a href="./galego/index.html">Ingles</a></li>  
+            </ul>
+          </li>-->
+            <li class="drop-down"><a href="">Textos Legales</a>
+              <ul>
+                   
+                    <li><a href="politica-cookies.html">Politica de Cookies</a></li>  
+              </ul>
+            </li>
+        </ul>
+      </nav><!-- .nav-menu --><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Solicitud</title>
+    <style>
+        /* Estilos CSS */
+        body { font-family: Arial, sans-serif; }
+        .form-container { width:  50%; margin: auto; padding:  20px; background-color: #9da1d8; border:  1px solid #ddd; }
+        label { display: block; margin-bottom:  5px; }
+        input[type="text"], select, textarea { width:  100%; padding:  5px; margin-bottom:  15px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding:  10px  20px; border: none; cursor: pointer; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Solicitud de Cotizacion</h2>
+        <form id="solicitudForm" onsubmit="return validarFormulario();">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="empresa">Empresa donde Labora:</label>
+            <input type="text" id="empresa" name="empresa" required>
+            
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+            
+            <label for="requerimiento">Requerimiento:</label>
+            <select id="requerimiento" name="requerimiento" required>
+                <option value="">Seleccione...</option>
+                <option value="administracion">Administración</option>
+                <option value="educacion">Educación</option>
+                <option value="ambiente">Ambiente</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+
+             <label for="telefono">Número de Contacto Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+             <label for="observacion">Observación:</label>
+             <textarea id="observacion" name="observacion" rows="4" cols="50" required></textarea>
+
+             
+
+<!-- Resto del código JavaScript existente -->
+
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <input type="submit" value="Enviar Solicitud">
+        </form>
+    </div>
+    
+    <script>
+        // Función de validación JavaScript
+        function validarFormulario() {
+            var nombre = document.getElementById('nombre').value;
+            var apellido = document.getElementById('apellido').value;
+            var empresa = document.getElementById('empresa').value;
+            var cargo = document.getElementById('cargo').value;
+            var requerimiento = document.getElementById('requerimiento').value;
+            var fecha = document.getElementById('fecha').value;
+            var correo = document.getElementById('correo').value;
+            var telefono = document.getElementById('telefono').value;
+            var observacion = document.getElementById('observacion').value;
+            
+            if(nombre === '' || apellido === '' || empresa === '' || cargo === '' || requerimiento === '' || fecha === '' || correo === '' || telefono === '' || observacion === '') {
+        alert('Por favor, complete todos los campos.');
+        return false;  
+            }
+            
+            // Aquí puedes agregar más validaciones si es necesario
+            
+            return true; // Si todo está bien, permite el envío del formulario
+        }
+    </script>
+     <a class="whatsapp" href="https://wa.me/+34654306040?text=Hola!%20Me%20interesa%20el%20servicio%20de...%20" 
+     target="_blank"><img src="./assets/img/whatsapp.png"></a>
+             <a class="scroll-to-top js-scroll-trigger" href=".top-header">
+                 <i class="ti-angle-up"></i>
+             </a>
+             <footer id="footer">
+
+               <div class="footer-top">
+                 <div class="container">
+                   <div class="row">
+           
+                     <div class="col-lg-3 col-md-6 footer-contact">
+                       <h3>TAF Consultores</h3>
+                       <p>
+                         Calle 50 entre carreras 14 y 15. N° 14-30<br>
+                         Barquisimeto, Municipio Iribarren, Parroquia Concepción, Estado Lara<br>
+                         Venezuela<br><br>
+                         <strong style="font-weight: 800;">Teléfono:+58 412 000 123 456</strong><br>
+                         <strong>Horario:</strong> Lunes a viernes: 9-17hs<br>
+                         <strong>Email:</strong> atencion@<br>tafconsultores.com<br>
+                       </p>
+                     </div>
+           
+                     <div class="col-lg-2 col-md-6 footer-links">
+                       <h4>Enlaces</h4>
+                       <ul>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#header">Inicio</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#about">Conózcanos</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#services">Servicios</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacto</a></li>
+                         <li><i class="bx bx-chevron-right"></i><a href="politica-cookies.html">Politica de Cookies</a></li>  
+                       </ul>
+                     </div>
+           
+                     <div class="col-lg-3 col-md-6 footer-links">
+                       <h4>Servicios</h4>
+                       <ul>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Protección de Datos</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Ley LSSI</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Ley de Cookies</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Sistema de implementación de firma digital</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Normativa ISO 27001</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Esquema Nacional de seguridad</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Formación</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Auditoría</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Delegado de Protección de Datos(DPO)</a></li>
+                       </ul>
+                     </div>
+           
+                     <div class="col-lg-4 col-md-6 footer-newsletter text-center">
+                       <div>
+                         <img src="./assets/img/logotafvertical.PNG">
+                       </div>
+                     </div>
+                       
+                     </div>
+           
+           
+                   </div>
+                 </div>
+               </div>
+           
+               <div class="container d-lg-flex py-4 pie-footer">
+           
+                 <div class="mr-lg-auto text-center text-lg-left">
+                   <div class="copyright">
+                     &copy; Copyright <strong><span>Hezaro Connect Systems c.a</span></strong>. All Rights Reserved
+                   </div>
+                   <div class="credits">
+                     <!-- All the links in the footer should remain intact. -->
+                     <!-- You can delete the links only if you purchased the pro version. -->
+                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
+                     Designed by <a href="https://wasabidev.com.ar/">@luis.house @carloslazaro</a>
+                   </div>
+                 </div>
+                 <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+                   <a href="https://www.instagram.com/mh_consultores_/?hl=es" class="instagram"><i class="bx bxl-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/henrique-vidal-395866112/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                 </div>
+             </footer><!-- End Footer -->
+</body>
+</html>
